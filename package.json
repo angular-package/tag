@@ -1,0 +1,41 @@
+{
+  "name": "@angular-package/tag",
+  "version": "0.0.1",
+  "description": "Any tag with optional attributes.",
+  "author": "Angular Package <contact@angular-package.dev> (https://angular-package.dev)",
+  "homepage": "https://tag.angular-package.dev",
+  "peerDependencies": {
+    "@angular-package/wrapper": "^0.0.1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular-package/testing": "^2.0.0",
+    "@angular-package/type": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "keywords": [
+    "Attribute",
+    "Attributes",
+    "BBCode",
+    "Html tag",
+    "Opening tag",
+    "Closing tag",
+    "Tag",
+    "Tags",
+    "Variable",
+    "Variables"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular-package/tag.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular-package/tag/issues"
+  },
+  "license": "MIT"
+}
