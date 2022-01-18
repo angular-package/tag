@@ -15,16 +15,6 @@ export class Attribute<
   }
 
   /**
-   * The `get` accessor returns the attribute, the primitive value of a specified object. It is just another accessor of a general name to
-   *   the primitive value of a specified `Attribute` object.
-   * @return The return value is the attribute of generic type variables `Name` and `Value` on the template `${Name}="${Value}"`.
-   * @angularpackage
-   */
-  public get get(): `${Name}="${Value}"` {
-    return this.valueOf();
-  }
-
-  /**
    * The `get` accessor returns the name of the attribute.
    * @returns The return value is the attribute name of a generic type variable `Name`.
    * @angularpackage
@@ -103,8 +93,8 @@ export class Attribute<
    */
   constructor(name: Name, value: Value) {
     super(Attribute.template`${name}${value}`);
-    this.#name = name;
-    this.#value = value;
+    this.#name = String(name) as Name;
+    this.#value = String(value) as Value;
   }
 
   /**
